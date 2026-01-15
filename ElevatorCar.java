@@ -66,9 +66,10 @@ public class ElevatorCar {
                 setCurrentFloor(i);
                 showDisplay();
             }
-        door.openDoor(id);
+
 
         }
+        door.openDoor(id);
 
 
 
