@@ -17,7 +17,7 @@ public  class NearestElevatorStrategy implements ElevatorSelectionStrategy{
 
             //good if same direction
 
-            boolean isSameDirection=controller.elevatorCar.movingDirection==direction && ((direction==ElevatorDirection.UP && nextFloorStoppage<=requestFloor) || direction==ElevatorDirection.DOWN && nextFloor>=requestFloor);
+            boolean isSameDirection=controller.elevatorCar.movingDirection==direction && ((direction==ElevatorDirection.UP && nextFloorStoppage<=requestFloor) || direction==ElevatorDirection.DOWN && nextFloorStoppage>=requestFloor);
 
             int dist=Math.abs(nextFloorStoppage-requestFloor);
 
